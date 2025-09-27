@@ -1,0 +1,45 @@
+@url = http://localhost:3000
+@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTcsImlhdCI6MTc1ODkxNjA0NCwiZXhwIjoxNzU4OTE5NjQ0fQ.kTSiAXOrprdu7ix5mO1JVZIueKWSyBvuI739q16pq80
+### busca todos os usuários
+GET  {{url}}/users
+Authorization:  {{token}}
+
+### login de usuário
+POST {{url}}/users/login
+Content-Type: application/json
+
+{
+  "email": "tste@email.com",
+  "senha": "123456"
+}
+
+
+
+
+### cria um novo usuário
+POST {{url}}/users
+Content-Type: application/json
+
+  {
+    "nome": "Novo Usuário",
+    "email": "tddsste@email.com",
+    "senha" : "123456"
+  }
+
+
+### cria um novo usuário
+
+
+### busca usuario por id
+GET  {{url}}/users/getUser/5
+Authorization:  {{token}}
+
+###
+PUT {{url}}/users/5
+Content-Type: application/json
+
+  {
+    "nome": "kawan",
+    "email": "",
+    "senha" : ""
+  }
